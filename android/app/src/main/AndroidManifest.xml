@@ -39,4 +39,11 @@
             <data android:mimeType="text/plain"/>
         </intent>
     </queries>
+    <service
+         android:name=".CallScreeningService"
+         android:permission="android.permission.BIND_CALL_SCREENING_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.CallScreeningService"/>
+            </intent-filter>
+    </service>
 </manifest>
